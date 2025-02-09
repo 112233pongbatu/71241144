@@ -1,0 +1,52 @@
+# Harga beli awal per gram
+harga_beli_awal = 650000  
+jumlah_gram_awal = 25  
+
+# Harga jual pertama per gram
+harga_jual_sekarang = 685000  
+
+# Menghitung modal awal
+modal_awal = harga_beli_awal * jumlah_gram_awal  
+
+# Menghitung harga total saat ini
+harga_total_sekarang = harga_jual_sekarang * jumlah_gram_awal  
+
+# Menghitung keuntungan awal dalam Rupiah
+keuntungan_awal_rp = harga_total_sekarang - modal_awal  
+
+# Menghitung keuntungan awal dalam persen
+keuntungan_awal_persen = (keuntungan_awal_rp / modal_awal) * 100  
+
+# Menampilkan hasil keuntungan awal
+print("Keuntungan awal dalam Rp:", keuntungan_awal_rp)
+print("Keuntungan awal dalam %:", round(keuntungan_awal_persen, 2), "%")
+
+# -------------------------------
+# Pembelian emas tambahan
+jumlah_gram_baru = 15  
+harga_beli_baru = 685000  
+
+# Menghitung modal tambahan
+modal_baru = jumlah_gram_baru * harga_beli_baru  
+
+# Menghitung total modal setelah pembelian tambahan
+total_modal = modal_awal + modal_baru  
+
+# Menghitung total gram emas sekarang
+total_gram = jumlah_gram_awal + jumlah_gram_baru  
+
+# Harga jual terbaru per gram
+harga_jual_terbaru = 715000  
+
+# Menghitung total harga emas saat ini
+harga_total_baru = total_gram * harga_jual_terbaru  
+
+# Menghitung total keuntungan dalam Rupiah
+keuntungan_total_rp = harga_total_baru - total_modal  
+
+# **Memperbaiki perhitungan keuntungan dalam persen**
+keuntungan_total_persen = (keuntungan_total_rp / total_modal) * 100  
+
+# Menampilkan hasil keuntungan setelah pembelian tambahan
+print("Keuntungan total dalam Rp:", keuntungan_total_rp)
+print("Keuntungan total dalam %:", round(keuntungan_total_persen, 2), "%")
